@@ -126,9 +126,6 @@ input{
     border-radius: 5px;
     box-shadow: 10px 5px 0px rgba(96, 122, 123, 0.522);
 }
-input:hover{
-    border-color: rgb(255, 255, 255);
-}
 div>input{
     width: 100%;
     height: 5%;
@@ -141,11 +138,24 @@ form>input{
     width: 50%;
     height: 30px;
     font-family: var(--font1);
-    font-weight: bold;   
+    font-weight: bold;  
+}
+form>div>input:invalid{
+    background-color: rgb(255, 219, 219);
 }
 #logo{
     position: absolute;
     width: 100%;
     height: 7%;
     background-color: rgba(147, 165, 235, 0.439);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+#logo > h3{
+    font-size: 1.6em;
+}
+img{
+    height: 80%;
+}
+
